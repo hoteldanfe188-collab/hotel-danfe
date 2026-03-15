@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Explore Doti · Hotel Danfe</title>
+<link rel="icon" type="image/png" href="data:image/png;base64,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">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&family=Outfit:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --forest:#1f3528;--pine:#2d5040;--sage:#5c8c6a;--fern:#7aab87;
+  --mint:#a8d4b0;--foam:#d4ecda;--mist:#eef7f0;--cream:#f6f2ea;--parchment:#faf8f3;
+  --gold:#c8a96e;--goldlt:#e2c99a;
+  --neu-base:#e8f4eb;--neu-hi:rgba(255,255,255,0.82);--neu-sh:rgba(140,185,150,0.50);
+  --raise:5px 5px 12px var(--neu-sh),-3px -3px 9px var(--neu-hi);
+  --press:inset 3px 3px 7px var(--neu-sh),inset -2px -2px 5px var(--neu-hi);
+  --flat:2px 2px 5px var(--neu-sh),-1px -1px 4px var(--neu-hi);
+  --ease:cubic-bezier(.16,1,.3,1);--R:18px;--r:10px;
+}
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth;overflow-x:hidden}
+body{font-family:'Outfit',sans-serif;background:var(--parchment);color:var(--forest);overflow-x:hidden}
+::-webkit-scrollbar{width:3px}
+::-webkit-scrollbar-track{background:var(--mist)}
+::-webkit-scrollbar-thumb{background:var(--fern);border-radius:2px}
+
+/* ─── LOADER ─── */
+#loader{
+  position:fixed;inset:0;z-index:1000;
+  background:var(--parchment);
+  display:flex;align-items:center;justify-content:center;flex-direction:column;gap:1.2rem;
+  transition:opacity .7s ease,visibility .7s;
+}
+#loader.hide{opacity:0;visibility:hidden}
+#loader .llogo{font-family:'Cormorant Garamond',serif;font-size:2rem;color:var(--pine);letter-spacing:.08em}
+#loader .llogo em{font-style:italic;color:var(--sage)}
+#loader .lbar{width:110px;height:2px;background:rgba(92,140,106,.18);border-radius:1px;overflow:hidden;position:relative}
+#loader .lbar::after{content:'';position:absolute;top:0;left:-100%;width:100%;height:100%;
+  background:linear-gradient(90deg,var(--fern),var(--mint));border-radius:1px;
+  animation:lrun 1.1s var(--ease) forwards}
+@keyframes lrun{to{left:0}}
+
+/* ─── NAV ─── */
+#nav{position:fixed;inset:0 0 auto;z-index:300;display:flex;align-items:center;justify-content:space-between;padding:1.1rem 4rem;transition:background .45s,padding .35s,box-shadow .35s}
+#nav.lit{background:rgba(246,242,234,.94);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);box-shadow:0 1px 0 rgba(92,140,106,.14);padding:.75rem 4rem}
+.nlogo{font-family:'Cormorant Garamond',serif;font-size:1.55rem;font-weight:400;color:#fff;text-decoration:none;transition:color .3s}
+#nav.lit .nlogo{color:var(--forest)}
+.nlogo em{font-style:italic;color:var(--goldlt)}
+#nav.lit .nlogo em{color:var(--gold)}
+.nlinks{display:flex;gap:2.2rem;list-style:none;align-items:center}
+.nlinks a{text-decoration:none;font-size:.68rem;letter-spacing:.22em;text-transform:uppercase;color:rgba(255,255,255,.78);position:relative;padding-bottom:2px;transition:color .25s}
+.nlinks a::after{content:'';position:absolute;bottom:0;left:0;width:0;height:1px;background:var(--mint);transition:width .32s var(--ease);border-radius:1px}
+.nlinks a:hover{color:#fff}.nlinks a:hover::after{width:100%}
+.nlinks a.act{color:var(--goldlt)}.nlinks a.act::after{width:100%;background:var(--goldlt)}
+#nav.lit .nlinks a{color:var(--sage)}
+#nav.lit .nlinks a:hover{color:var(--pine)}
+#nav.lit .nlinks a::after{background:var(--sage)}
+#nav.lit .nlinks a.act{color:var(--pine)}
+.nbtn{font-family:'Outfit',sans-serif;font-size:.67rem;letter-spacing:.2em;text-transform:uppercase;background:transparent;color:rgba(255,255,255,.85);border:1px solid rgba(255,255,255,.38);padding:.5rem 1.4rem;border-radius:20px;cursor:pointer;transition:all .32s}
+.nbtn:hover{background:rgba(255,255,255,.15);color:#fff}
+#nav.lit .nbtn{color:var(--pine);border-color:var(--fern)}
+#nav.lit .nbtn:hover{background:var(--fern);color:#fff}
+.ham{display:none;flex-direction:column;gap:5px;cursor:pointer;background:none;border:none;padding:4px}
+.ham span{width:22px;height:1.5px;background:rgba(255,255,255,.85);display:block;transition:all .32s;border-radius:1px}
+#nav.lit .ham span{background:var(--forest)}
+.nlinks.open{display:flex!important;flex-direction:column;position:fixed;inset:0;background:rgba(246,242,234,.97);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);align-items:center;justify-content:center;gap:2rem;z-index:280}
+.nlinks.open a{font-size:1.2rem;color:var(--forest);letter-spacing:.12em}
+
+/* ─── HERO ─── */
+.hero{position:relative;min-height:100svh;display:flex;align-items:center;justify-content:center;overflow:hidden}
+.hero-bg{position:absolute;inset:0;z-index:0;background:url('https://images.unsplash.com/photo-1544735716-392fe2489ffa?w=1800&q=80')center/cover;will-change:transform;transform:scale(1.08)}
+.hero-bg::after{content:'';position:absolute;inset:0;background:linear-gradient(160deg,rgba(20,38,26,.74)0%,rgba(45,80,64,.32)48%,rgba(20,38,26,.8)100%)}
+.hero-morph{position:absolute;inset:0;z-index:1;width:100%;height:100%;pointer-events:none;overflow:visible}
+.hero-content{position:relative;z-index:3;text-align:center;padding:1.5rem}
+.hero-eyebrow{display:inline-flex;align-items:center;gap:.6rem;font-size:.6rem;letter-spacing:.48em;text-transform:uppercase;color:rgba(210,240,220,.72);margin-bottom:2rem;animation:fadeUp .9s var(--ease) both .3s}
+.hero-eyebrow span{width:28px;height:1px;background:rgba(210,240,220,.4)}
+.hero-title{font-family:'Cormorant Garamond',serif;font-size:clamp(4rem,11vw,9rem);font-weight:300;line-height:.9;color:#fff;animation:fadeUp .95s var(--ease) both .48s}
+.hero-title em{display:block;font-style:italic;color:var(--goldlt)}
+.hero-sub{font-size:.78rem;letter-spacing:.28em;text-transform:uppercase;color:rgba(255,255,255,.5);margin-top:1.8rem;animation:fadeUp .95s var(--ease) both .62s}
+.hero-line{width:1px;height:55px;background:linear-gradient(to bottom,rgba(255,255,255,.3),transparent);margin:2rem auto 0;animation:fadeUp .9s var(--ease) both .78s}
+.hero-wave{position:absolute;bottom:-1px;left:0;right:0;z-index:4;line-height:0}
+.hero-wave svg{width:100%;display:block}
+@keyframes fadeUp{from{opacity:0;transform:translateY(-20px)}to{opacity:1;transform:translateY(0)}}
+
+/* ─── FILTER BAR ─── */
+.filter-bar{
+  background:rgba(246,242,234,.92);
+  backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);
+  border-bottom:1px solid rgba(168,212,176,.2);
+  padding:1.8rem 5vw;
+  position:sticky;top:0;z-index:50;
+}
+.filter-inner{max-width:900px;margin:0 auto;text-align:center}
+.filter-label{font-size:.58rem;letter-spacing:.42em;text-transform:uppercase;color:var(--sage);margin-bottom:1rem}
+.filter-tabs{display:flex;gap:.5rem;justify-content:center;flex-wrap:wrap}
+.ftab{
+  background:transparent;border:1px solid rgba(168,212,176,.35);
+  color:var(--sage);padding:.48rem 1.4rem;border-radius:20px;
+  font-family:'Outfit',sans-serif;font-size:.68rem;
+  letter-spacing:.18em;text-transform:uppercase;cursor:pointer;
+  transition:all .3s var(--ease);
+}
+.ftab:hover{border-color:var(--fern);color:var(--pine)}
+.ftab.on{background:var(--fern);color:#fff;border-color:var(--fern);box-shadow:0 3px 12px rgba(122,171,135,.32)}
+
+/* ─── DESTINATION GRID ─── */
+.dest-section{padding:4rem 5vw 6rem}
+.dest-grid{
+  display:grid;
+  grid-template-columns:repeat(12,1fr);
+  gap:1.2rem;
+  max-width:1400px;margin:0 auto;
+}
+/* Card layout: card 1 = big, 2+3 = mid, 4+5+6 = small row */
+.dcard{
+  position:relative;overflow:hidden;cursor:pointer;
+  border-radius:var(--R);
+  opacity:0;transform:translateY(36px);
+  transition:transform .6s var(--ease),opacity .6s ease,box-shadow .4s;
+  box-shadow:0 3px 15px rgba(31,53,40,.1);
+}
+.dcard.in{opacity:1;transform:translateY(0)}
+.dcard:hover{transform:translateY(-7px)!important;box-shadow:0 24px 64px rgba(31,53,40,.22)}
+.dcard:nth-child(1){grid-column:span 7;grid-row:span 2;min-height:580px}
+.dcard:nth-child(2){grid-column:span 5;min-height:280px}
+.dcard:nth-child(3){grid-column:span 5;min-height:280px}
+.dcard:nth-child(4){grid-column:span 4;min-height:360px}
+.dcard:nth-child(5){grid-column:span 4;min-height:360px}
+.dcard:nth-child(6){grid-column:span 4;min-height:360px}
+.dcard img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .8s var(--ease)}
+.dcard:hover img{transform:scale(1.06)}
+.dcard-overlay{
+  position:absolute;inset:0;
+  background:linear-gradient(to top,rgba(20,38,26,.92)0%,rgba(45,80,64,.28)55%,transparent 100%);
+  transition:background .4s;
+}
+.dcard:hover .dcard-overlay{background:linear-gradient(to top,rgba(20,38,26,.97)0%,rgba(45,80,64,.42)65%,rgba(20,38,26,.18)100%)}
+.dcard-cat{
+  position:absolute;top:1.1rem;left:1.1rem;
+  font-size:.56rem;letter-spacing:.32em;text-transform:uppercase;
+  color:var(--goldlt);background:rgba(45,80,64,.5);
+  padding:.28rem .75rem;border-radius:16px;
+  border:1px solid rgba(200,169,110,.28);
+}
+.dcard-info{position:absolute;bottom:0;left:0;right:0;padding:1.8rem}
+.dcard-num{
+  font-family:'Cormorant Garamond',serif;
+  font-size:.72rem;letter-spacing:.28em;color:var(--goldlt);opacity:.65;margin-bottom:.3rem;
+}
+.dcard-name{
+  font-family:'Cormorant Garamond',serif;
+  font-size:clamp(1.3rem,2.2vw,1.9rem);font-weight:300;
+  color:#fff;line-height:1.1;margin-bottom:.35rem;
+}
+.dcard-tagline{
+  font-size:.73rem;color:rgba(255,255,255,.6);font-weight:300;
+  max-height:0;overflow:hidden;
+  transition:max-height .5s ease,opacity .4s;opacity:0;
+}
+.dcard:hover .dcard-tagline{max-height:2.5rem;opacity:.85}
+.dcard-cta{
+  display:inline-block;margin-top:.75rem;
+  border:1px solid rgba(200,169,110,.45);color:var(--goldlt);
+  padding:.4rem 1.1rem;font-size:.6rem;letter-spacing:.18em;
+  text-transform:uppercase;background:rgba(200,169,110,.08);
+  border-radius:3px;cursor:pointer;font-family:'Outfit',sans-serif;
+  opacity:0;transform:translateY(7px);
+  transition:all .38s ease .08s;
+}
+.dcard:hover .dcard-cta{opacity:1;transform:translateY(0)}
+.dcard-cta:hover{background:var(--gold);border-color:var(--gold);color:#fff}
+.dcard.hidden{display:none}
+
+/* ─── PULLQUOTE — pure typographic, no image ─── */
+.pquote{
+  padding:8rem 5vw;text-align:center;
+  position:relative;overflow:hidden;
+  background:var(--forest);
+}
+/* Decorative large letter watermark */
+.pquote::before{
+  content:'DOTI';
+  position:absolute;
+  font-family:'Cormorant Garamond',serif;
+  font-size:clamp(10rem,28vw,22rem);
+  font-weight:600;letter-spacing:-.03em;
+  color:rgba(168,212,176,.05);
+  top:50%;left:50%;transform:translate(-50%,-50%);
+  pointer-events:none;white-space:nowrap;line-height:1;
+  user-select:none;
+}
+/* Ornamental top & bottom lines */
+.pquote::after{
+  content:'';
+  position:absolute;
+  left:5vw;right:5vw;top:3.5rem;
+  height:1px;background:linear-gradient(90deg,transparent,rgba(200,169,110,.22),rgba(200,169,110,.5),rgba(200,169,110,.22),transparent);
+}
+.pquote-bottom-line{
+  position:absolute;left:5vw;right:5vw;bottom:3.5rem;
+  height:1px;background:linear-gradient(90deg,transparent,rgba(200,169,110,.22),rgba(200,169,110,.5),rgba(200,169,110,.22),transparent);
+}
+.pquote-inner{position:relative;z-index:1;max-width:860px;margin:0 auto}
+.pquote-ornament{
+  font-size:clamp(3.5rem,7vw,5.5rem);
+  font-family:'Cormorant Garamond',serif;
+  color:var(--gold);opacity:.35;
+  line-height:1;margin-bottom:-.5rem;display:block;
+}
+.pquote blockquote{
+  font-family:'Cormorant Garamond',serif;
+  font-size:clamp(1.55rem,3.2vw,2.6rem);
+  font-style:italic;font-weight:300;line-height:1.6;
+  color:var(--foam);
+}
+.pquote blockquote em{
+  color:var(--goldlt);font-style:italic;
+}
+.pquote-divider{
+  display:flex;align-items:center;gap:1.2rem;
+  justify-content:center;margin:2rem 0;
+}
+.pquote-divider span{width:52px;height:1px;background:rgba(200,169,110,.35)}
+.pquote-diamond{width:6px;height:6px;background:var(--gold);opacity:.6;transform:rotate(45deg)}
+.pquote cite{
+  font-style:normal;
+  font-size:.63rem;letter-spacing:.48em;text-transform:uppercase;
+  color:var(--goldlt);opacity:.75;
+}
+
+/* ─── TIPS ─── */
+.tips{background:#fff;padding:7rem 5vw}
+.tips-inner{max-width:1200px;margin:0 auto}
+.tips-head{text-align:center;margin-bottom:3.5rem}
+.tips-head .rule{width:42px;height:2px;background:linear-gradient(90deg,var(--fern),var(--foam));border-radius:1px;margin:1.3rem auto}
+.tips-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.4rem}
+.tip-card{
+  background:var(--neu-base);box-shadow:var(--raise);
+  border-radius:var(--R);padding:2.2rem 1.8rem;
+  transition:transform .38s var(--ease),box-shadow .38s;
+  position:relative;overflow:hidden;
+  opacity:0;transform:translateY(28px);
+  transition:opacity .68s var(--ease),transform .68s var(--ease),box-shadow .38s;
+}
+.tip-card.in{opacity:1;transform:translateY(0)}
+.tip-card:hover{transform:translateY(-5px)!important;box-shadow:7px 7px 18px var(--neu-sh),-4px -4px 13px var(--neu-hi)}
+.tip-card::after{
+  content:'';position:absolute;bottom:-30px;right:-30px;
+  width:100px;height:100px;border-radius:50%;
+  background:radial-gradient(circle,var(--foam),transparent 68%);
+  opacity:0;transition:opacity .4s;
+}
+.tip-card:hover::after{opacity:1}
+.tip-ico{font-size:2rem;margin-bottom:.85rem;display:block}
+.tip-title{font-family:'Cormorant Garamond',serif;font-size:1.2rem;color:var(--forest);margin-bottom:.7rem}
+.tip-txt{font-size:.78rem;color:var(--sage);line-height:1.78;font-weight:300}
+
+/* ─── SEASON ─── */
+.season{background:var(--mist);padding:6rem 5vw;position:relative;overflow:hidden}
+.season::before{content:'';position:absolute;inset:0;background:url('https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1200&q=30')center/cover;opacity:.04}
+.season-inner{max-width:1200px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:5rem;align-items:center;position:relative}
+.season-grid{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+.s-card{
+  background:rgba(255,255,255,.6);
+  border:1px solid rgba(168,212,176,.28);
+  border-radius:var(--r);padding:1.4rem;
+  transition:all .32s;backdrop-filter:blur(4px);-webkit-backdrop-filter:blur(4px);
+}
+.s-card:hover{background:#fff;box-shadow:0 7px 22px rgba(45,80,64,.1);transform:translateY(-3px)}
+.s-mo{font-size:.56rem;letter-spacing:.28em;text-transform:uppercase;color:var(--fern);margin-bottom:.25rem}
+.s-name{font-family:'Cormorant Garamond',serif;font-size:1.12rem;color:var(--forest);margin-bottom:.25rem}
+.s-desc{font-size:.74rem;color:var(--sage);font-weight:300}
+
+/* ─── MAP ─── */
+.map-sec{background:#fff;padding:5rem 5vw;text-align:center}
+.map-wrap{max-width:880px;margin:2rem auto 0;border-radius:var(--R);overflow:hidden;box-shadow:var(--raise)}
+.map-wrap iframe{width:100%;height:400px;border:none;display:block}
+
+/* ─── CTA ─── */
+.exp-cta{
+  background:var(--forest);padding:9rem 5vw;text-align:center;
+  position:relative;overflow:hidden;
+}
+.exp-cta::before{
+  content:'DOTI';
+  position:absolute;font-family:'Cormorant Garamond',serif;
+  font-size:30vw;font-weight:600;
+  color:rgba(168,212,176,.04);
+  top:50%;left:50%;transform:translate(-50%,-50%);
+  pointer-events:none;white-space:nowrap;
+}
+.exp-cta .sec-label{color:var(--goldlt);position:relative}
+.exp-cta .stit{color:#fff;position:relative;margin-top:.5rem}
+.stit{font-family:'Cormorant Garamond',serif;font-size:clamp(2rem,3.8vw,3rem);font-weight:300;line-height:1.12}
+.stit em{font-style:italic;color:var(--fern)}
+.exp-cta .stit em{color:var(--goldlt)}
+.cta-row{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;margin-top:2.8rem;position:relative}
+.btn-gold{background:var(--fern);color:#fff;padding:.88rem 2.4rem;border-radius:28px;font-size:.76rem;letter-spacing:.14em;text-transform:uppercase;text-decoration:none;font-weight:500;box-shadow:0 4px 20px rgba(122,171,135,.45);transition:all .35s var(--ease)}
+.btn-gold:hover{background:var(--pine);transform:translateY(-3px)}
+.btn-ghost2{background:transparent;color:rgba(255,255,255,.78);padding:.88rem 2.4rem;border-radius:28px;border:1px solid rgba(255,255,255,.26);font-size:.76rem;letter-spacing:.14em;text-transform:uppercase;text-decoration:none;transition:all .35s}
+.btn-ghost2:hover{background:rgba(255,255,255,.1);color:#fff}
+.sec-label{font-size:.6rem;letter-spacing:.46em;text-transform:uppercase;color:var(--sage);font-weight:500;margin-bottom:.5rem}
+
+/* ─── FOOTER ─── */
+footer{background:var(--forest);padding:3.5rem 5vw 2rem;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:1rem;border-top:1px solid rgba(168,212,176,.08)}
+.flogo{font-family:'Cormorant Garamond',serif;font-size:1.5rem;color:var(--foam);text-decoration:none}
+.flogo em{font-style:italic}
+.fcopy{font-size:.68rem;color:rgba(168,212,176,.3)}
+.fback{font-size:.68rem;letter-spacing:.2em;text-transform:uppercase;color:var(--mint);opacity:.55;text-decoration:none;transition:opacity .2s}
+.fback:hover{opacity:1}
+
+/* ─── MODAL ─── */
+.moverlay{display:none;position:fixed;inset:0;z-index:900;background:rgba(20,38,26,.6);align-items:center;justify-content:center;padding:2rem}
+.moverlay.show{display:flex}
+.mbox{background:var(--neu-base);box-shadow:12px 12px 32px rgba(45,80,64,.22),-6px -6px 18px var(--neu-hi);border-radius:var(--R);padding:3.2rem;max-width:860px;width:100%;max-height:88vh;overflow:hidden;display:grid;grid-template-columns:1fr 1fr;animation:calDrop .38s var(--ease)}
+@keyframes calDrop{from{opacity:0;transform:scale(.95) translateY(16px)}to{opacity:1;transform:scale(1) translateY(0)}}
+.mbox-img{border-radius:var(--r);overflow:hidden}
+.mbox-img img{width:100%;height:100%;object-fit:cover;display:block;min-height:280px}
+.mbox-body{padding:2rem 0 2rem 2rem;display:flex;flex-direction:column;overflow-y:auto}
+.mcat{font-size:.58rem;letter-spacing:.32em;text-transform:uppercase;color:var(--sage);margin-bottom:.6rem}
+.mtitle{font-family:'Cormorant Garamond',serif;font-size:2rem;font-weight:300;color:var(--forest);line-height:1.1;margin-bottom:.4rem}
+.mrule{width:38px;height:2px;background:linear-gradient(90deg,var(--fern),var(--foam));border-radius:1px;margin-bottom:1rem}
+.mdesc{font-size:.82rem;color:var(--pine);line-height:1.88;font-weight:300;flex:1}
+.mfacts{display:grid;grid-template-columns:1fr 1fr;gap:.8rem;margin-top:1.2rem;padding-top:1.2rem;border-top:1px solid rgba(168,212,176,.2)}
+.mfact-l{font-size:.56rem;letter-spacing:.28em;text-transform:uppercase;color:var(--sage);margin-bottom:.18rem}
+.mfact-v{font-size:.82rem;color:var(--pine);font-weight:300}
+.m-bookbtn{display:block;margin-top:1.4rem;background:var(--fern);color:#fff;padding:.75rem 1.8rem;border-radius:22px;font-size:.7rem;letter-spacing:.14em;text-transform:uppercase;text-decoration:none;font-family:'Outfit',sans-serif;font-weight:500;text-align:center;box-shadow:0 4px 14px rgba(122,171,135,.32);transition:background .3s}
+.m-bookbtn:hover{background:var(--pine)}
+.m-close{position:absolute;top:1.3rem;right:1.3rem;background:var(--neu-base);box-shadow:var(--flat);border:none;width:34px;height:34px;border-radius:50%;font-size:1rem;cursor:pointer;display:flex;align-items:center;justify-content:center;color:var(--pine);transition:all .25s}
+.m-close:hover{background:var(--fern);color:#fff}
+
+/* ─── WAVE ─── */
+.wdiv{line-height:0;overflow:hidden}
+.wdiv svg{width:100%;display:block}
+
+/* ─── REVEAL ─── */
+.sr{opacity:0;transform:translateY(28px);transition:opacity .72s var(--ease),transform .72s var(--ease)}
+.sr.in{opacity:1;transform:translateY(0)}
+
+/* ─── RESPONSIVE ─── */
+@media(max-width:960px){
+  #nav{padding:.9rem 1.6rem}
+  #nav.lit{padding:.75rem 1.6rem}
+  .nlinks{display:none}.ham{display:flex}
+  .dest-grid{grid-template-columns:1fr;gap:1rem}
+  .dcard:nth-child(n){grid-column:span 1;grid-row:span 1;min-height:280px}
+  .dcard:nth-child(1){min-height:360px}
+  .filter-bar{position:relative}
+  .tips-grid{grid-template-columns:1fr}
+  .season-inner{grid-template-columns:1fr;gap:2.5rem}
+  .mbox{grid-template-columns:1fr}
+  .mbox-img{display:none}
+  footer{flex-direction:column;text-align:center;padding:2.5rem 1.5rem}
+  .pquote{padding:5rem 1.8rem}
+  .tips,.map-sec{padding:5rem 1.5rem}
+  .exp-cta{padding:6rem 1.5rem}
+}
+@media(max-width:520px){
+  .hero-ctas,.cta-row{flex-direction:column;align-items:center}
+  .season-grid{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+
+<!-- LOADER -->
+<div id="loader">
+  <div class="llogo"><em>Hotel</em> Danfe</div>
+  <div class="lbar"></div>
+</div>
+
+<!-- NAV -->
+<nav id="nav">
+  <a class="nlogo" href="index.html"><em>Hotel</em> Danfe</a>
+  <ul class="nlinks" id="NL">
+    <li><a href="index.html#about">About</a></li>
+    <li><a href="index.html#rooms">Rooms</a></li>
+    <li><a href="index.html#amenities">Amenities</a></li>
+    <li><a href="explore.html" class="act">Explore</a></li>
+    <li><a href="index.html#contact">Contact</a></li>
+  </ul>
+  <a href="index.html#contact" class="nbtn">Book Now</a>
+  <button class="ham" id="HAM" onclick="toggleNav()" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-bg" id="HBG"></div>
+  <svg class="hero-morph" viewBox="0 0 1200 700" preserveAspectRatio="xMidYMid slice">
+    <path opacity=".08" fill="#a8d4b0">
+      <animate attributeName="d" dur="16s" repeatCount="indefinite" calcMode="spline" keySplines="0.45 0 0.55 1;0.45 0 0.55 1"
+        values="M950,100 C1100,30 1190,150 1160,300 C1130,450 980,510 860,445 C740,380 730,230 790,145 C830,90 870,115 950,100Z;M980,75 C1130,10 1200,160 1165,320 C1130,490 965,525 840,452 C720,378 712,215 778,128 C820,68 900,95 980,75Z;M950,100 C1100,30 1190,150 1160,300 C1130,450 980,510 860,445 C740,380 730,230 790,145 C830,90 870,115 950,100Z"/>
+    </path>
+    <path opacity=".06" fill="#d4ecda">
+      <animate attributeName="d" dur="20s" repeatCount="indefinite" calcMode="spline" keySplines="0.45 0 0.55 1;0.45 0 0.55 1"
+        values="M80,520 C-30,440 5,290 90,225 C175,160 295,205 310,310 C325,415 245,535 165,548 C110,555 88,540 80,520Z;M55,540 C-55,450 15,272 108,208 C200,144 308,220 316,332 C324,444 236,548 148,554 C85,558 68,548 55,540Z;M80,520 C-30,440 5,290 90,225 C175,160 295,205 310,310 C325,415 245,535 165,548 C110,555 88,540 80,520Z"/>
+    </path>
+  </svg>
+  <div class="hero-content">
+    <p class="hero-eyebrow"><span></span>Doti · Far-Western Nepal<span></span></p>
+    <h1 class="hero-title">Explore<br><em>Doti</em></h1>
+    <p class="hero-sub">Ancient Kingdoms · Sacred Temples · Himalayan Wilderness</p>
+  </div>
+  <div class="hero-wave">
+    <svg viewBox="0 0 1440 80" preserveAspectRatio="none">
+      <path fill="#faf8f3">
+        <animate attributeName="d" dur="9s" repeatCount="indefinite" calcMode="spline" keySplines="0.42 0 0.58 1;0.42 0 0.58 1"
+          values="M0,45 C240,85 480,5 720,45 C960,85 1200,10 1440,45L1440,80L0,80Z;M0,25 C240,5 480,75 720,35 C960,5 1200,65 1440,30L1440,80L0,80Z;M0,45 C240,85 480,5 720,45 C960,85 1200,10 1440,45L1440,80L0,80Z"/>
+      </path>
+    </svg>
+  </div>
+</section>
+
+<!-- FILTER BAR -->
+<div class="filter-bar">
+  <div class="filter-inner">
+    <p class="filter-label">✦ Filter by category</p>
+    <div class="filter-tabs">
+      <button class="ftab on" onclick="filterCards('all',this)">All Destinations</button>
+      <button class="ftab" onclick="filterCards('spiritual',this)">Spiritual</button>
+      <button class="ftab" onclick="filterCards('nature',this)">Nature</button>
+      <button class="ftab" onclick="filterCards('history',this)">History</button>
+      <button class="ftab" onclick="filterCards('river',this)">River</button>
+    </div>
+  </div>
+</div>
+
+<!-- DESTINATIONS -->
+<section class="dest-section">
+  <div class="dest-grid">
+
+    <div class="dcard" id="shaileshwari" data-cat="spiritual" onclick="openModal('shaileshwari')">
+      <img src="https://raw.githubusercontent.com/hoteldanfe188-collab/hotel-danfe/main/doti.jpg"
+           alt="Shaileshwari Temple" loading="lazy" style="object-position:center 20%">
+      <div class="dcard-overlay"></div>
+      <span class="dcard-cat">Spiritual</span>
+      <div class="dcard-info">
+        <div class="dcard-num">01</div>
+        <h2 class="dcard-name">Shaileshwari Temple</h2>
+        <p class="dcard-tagline">The most revered goddess shrine of Far-Western Nepal</p>
+        <button class="dcard-cta">Discover →</button>
+      </div>
+    </div>
+
+    <div class="dcard" id="khaptad" data-cat="nature" onclick="openModal('khaptad')">
+      <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=900&q=80" alt="Khaptad" loading="lazy">
+      <div class="dcard-overlay"></div>
+      <span class="dcard-cat">Nature</span>
+      <div class="dcard-info">
+        <div class="dcard-num">02</div>
+        <h2 class="dcard-name">Khaptad National Park</h2>
+        <p class="dcard-tagline">Pristine Himalayan sanctuary spanning four districts</p>
+        <button class="dcard-cta">Discover →</button>
+      </div>
+    </div>
+
+    <div class="dcard" id="seti" data-cat="river" onclick="openModal('seti')">
+      <img src="https://images.unsplash.com/photo-1586348943529-beaae6c28db9?w=900&q=80" alt="Seti River" loading="lazy">
+      <div class="dcard-overlay"></div>
+      <span class="dcard-cat">River</span>
+      <div class="dcard-info">
+        <div class="dcard-num">03</div>
+        <h2 class="dcard-name">Seti River Valley</h2>
+        <p class="dcard-tagline">Crystal-clear glacial waters through Doti's green valleys</p>
+        <button class="dcard-cta">Discover →</button>
+      </div>
+    </div>
+
+    <div class="dcard" id="doti" data-cat="history" onclick="openModal('doti')">
+      <img src="https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=80" alt="Doti Kingdom" loading="lazy">
+      <div class="dcard-overlay"></div>
+      <span class="dcard-cat">History</span>
+      <div class="dcard-info">
+        <div class="dcard-num">04</div>
+        <h2 class="dcard-name">Doti Kingdom Ruins</h2>
+        <p class="dcard-tagline">Ancient fort and temples of a forgotten empire</p>
+        <button class="dcard-cta">Discover →</button>
+      </div>
+    </div>
+
+    <div class="dcard" id="gurukhola" data-cat="spiritual" onclick="openModal('gurukhola')">
+      <img src="https://images.unsplash.com/photo-1518002054494-3a6f94352e9d?w=800&q=80" alt="Gurukhola" loading="lazy">
+      <div class="dcard-overlay"></div>
+      <span class="dcard-cat">Spiritual</span>
+      <div class="dcard-info">
+        <div class="dcard-num">05</div>
+        <h2 class="dcard-name">Gurukhola Dham</h2>
+        <p class="dcard-tagline">Sacred pilgrimage site amid natural serenity</p>
+        <button class="dcard-cta">Discover →</button>
+      </div>
+    </div>
+
+    <div class="dcard" id="silgadhi" data-cat="nature" onclick="openModal('silgadhi')">
+      <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=800&q=80" alt="Silgadhi Hills" loading="lazy">
+      <div class="dcard-overlay"></div>
+      <span class="dcard-cat">Nature</span>
+      <div class="dcard-info">
+        <div class="dcard-num">06</div>
+        <h2 class="dcard-name">Silgadhi Hills</h2>
+        <p class="dcard-tagline">Sweeping Himalayan panoramas over the Far-Western frontier</p>
+        <button class="dcard-cta">Discover →</button>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- PULLQUOTE — pure typographic, no image -->
+<div class="pquote">
+  <div class="pquote-bottom-line"></div>
+  <div class="pquote-inner">
+    <span class="pquote-ornament">"</span>
+    <blockquote>Doti is Nepal's best-kept secret — where the mountains whisper <em>ancient stories</em> and every valley holds a <em>new wonder.</em></blockquote>
+    <div class="pquote-divider">
+      <span></span>
+      <div class="pquote-diamond"></div>
+      <span></span>
+    </div>
+    <cite>Far-Western Nepal</cite>
+  </div>
+</div>
+
+<!-- TRAVEL TIPS -->
+<section class="tips">
+  <div class="tips-inner">
+    <div class="tips-head sr">
+      <p class="sec-label">✦ Practical Guide</p>
+      <h2 class="stit">Before You <em>Explore</em></h2>
+      <div class="rule"></div>
+    </div>
+    <div class="tips-grid">
+      <div class="tip-card"><span class="tip-ico">✈️</span><h3 class="tip-title">Getting There</h3><p class="tip-txt">Fly Kathmandu → Dhangadhi → Dipayal Airport. Or overnight bus Kathmandu → Dhangadhi, then local bus to Silgadhi. Hotel Danfe offers airport transfer service.</p></div>
+      <div class="tip-card"><span class="tip-ico">🌤️</span><h3 class="tip-title">Best Season</h3><p class="tip-txt">October–November: crisp skies, peak trekking. March–April: blooming rhododendrons. Avoid July–August (heavy monsoon). December–February: snow-dusted and breathtaking.</p></div>
+      <div class="tip-card"><span class="tip-ico">🎒</span><h3 class="tip-title">What to Pack</h3><p class="tip-txt">Layered warm clothing, trekking shoes, sunscreen, rain jacket (monsoon) and a camera. Cash is recommended as ATMs are limited in remote areas.</p></div>
+      <div class="tip-card"><span class="tip-ico">🗺️</span><h3 class="tip-title">Local Transport</h3><p class="tip-txt">Jeeps and local buses connect Silgadhi to most destinations. For Khaptad, helicopter charters from Doti Airport are available. Our trekking desk arranges everything.</p></div>
+      <div class="tip-card"><span class="tip-ico">🍽️</span><h3 class="tip-title">Local Cuisine</h3><p class="tip-txt">Try Dhido, Gundruk soup and Sel Roti. Our restaurant serves authentic Doteli cuisine. Teahouses along trekking routes offer hearty meals and warm Nepali hospitality.</p></div>
+      <div class="tip-card"><span class="tip-ico">📞</span><h3 class="tip-title">Need Help?</h3><p class="tip-txt">Our team at Hotel Danfe is your local expert. Call <strong style="color:var(--pine)">+977 9848431439</strong> for travel advice, permits, guided tours and emergency assistance.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- SEASON -->
+<section class="season">
+  <div class="season-inner">
+    <div class="sr">
+      <p class="sec-label">✦ When to Visit</p>
+      <h2 class="stit">Choose Your <em>Perfect Season</em></h2>
+      <div style="width:42px;height:2px;background:linear-gradient(90deg,var(--fern),var(--foam));border-radius:1px;margin:1.3rem 0"></div>
+      <p style="font-size:.9rem;line-height:1.9;color:var(--pine);font-weight:300">Doti transforms beautifully with each season. From snow-capped winters to vibrant spring blooms and lush post-monsoon landscapes — every season holds its own magic.</p>
+    </div>
+    <div class="season-grid sr">
+      <div class="s-card"><div class="s-mo">Mar – May</div><div class="s-name">Spring</div><div class="s-desc">Rhododendrons bloom, clear skies, ideal trekking weather</div></div>
+      <div class="s-card"><div class="s-mo">Jun – Aug</div><div class="s-name">Monsoon</div><div class="s-desc">Lush green valleys, heavy rains, fewer crowds</div></div>
+      <div class="s-card" style="border-color:var(--fern)"><div class="s-mo">Sep – Nov</div><div class="s-name">Autumn ⭐</div><div class="s-desc">Best visibility, festivals, peak adventure season</div></div>
+      <div class="s-card"><div class="s-mo">Dec – Feb</div><div class="s-name">Winter</div><div class="s-desc">Snow-dusted peaks, quiet trails, crisp air</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- MAP -->
+<div class="map-sec">
+  <p class="sec-label" style="margin-bottom:.4rem">✦ Find Us</p>
+  <h2 class="stit">Hotel Danfe on <em>the Map</em></h2>
+  <p style="font-size:.84rem;color:var(--sage);font-weight:300;margin-top:.6rem">Buspark area, Silgadhi, Doti District — your base for all Far-Western adventures</p>
+  <div class="map-wrap">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d870.1732098380537!2d80.9715761732688!3d29.26198041403576!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39a3d1fc023f64a1%3A0xe45869cb4c29c4f0!2sHotel%20Danfe!5e0!3m2!1sen!2snp!4v1772362046410!5m2!1sen!2snp" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+</div>
+
+<!-- CTA -->
+<section class="exp-cta">
+  <p class="sec-label">✦ Ready to Experience Doti?</p>
+  <h2 class="stit">Begin Your <em>Journey</em><br>at Hotel Danfe</h2>
+  <div class="cta-row">
+    <a href="index.html#contact" class="btn-gold">Reserve Your Stay</a>
+    <a href="index.html" class="btn-ghost2">Back to Home</a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <a href="index.html" class="flogo"><em>Hotel</em> Danfe</a>
+  <span class="fcopy">© 2025 Hotel Danfe, Silgadhi, Doti, Nepal</span>
+  <a href="index.html" class="fback">← Back to Home</a>
+</footer>
+
+<!-- MODAL -->
+<div class="moverlay" id="MDL" onclick="closeModalOut(event)">
+  <div style="position:relative;max-width:860px;width:90%">
+    <button class="m-close" onclick="closeModal()">✕</button>
+    <div class="mbox" id="MBOX">
+      <div class="mbox-img"><img id="MIMG" src="" alt=""></div>
+      <div class="mbox-body">
+        <p class="mcat" id="MCAT"></p>
+        <h2 class="mtitle" id="MTIT"></h2>
+        <div class="mrule"></div>
+        <p class="mdesc" id="MDESC"></p>
+        <div class="mfacts" id="MFACTS"></div>
+        <a href="index.html#contact" class="m-bookbtn">Book a Stay &amp; Visit →</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+/* ─── Loader ─── */
+window.addEventListener('load',()=>{setTimeout(()=>document.getElementById('loader').classList.add('hide'),1200)});
+
+/* ─── Scroll/parallax ─── */
+let tk=false;
+window.addEventListener('scroll',()=>{
+  if(!tk){requestAnimationFrame(()=>{
+    const sy=window.scrollY;
+    const hb=document.getElementById('HBG');
+    if(hb)hb.style.transform=`translateY(${sy*.28}px) scale(1.08)`;
+
+    document.getElementById('nav').classList.toggle('lit',sy>55);
+    tk=false;
+  });tk=true;}
+},{passive:true});
+
+/* ─── Nav ─── */
+function toggleNav(){document.getElementById('NL').classList.toggle('open')}
+document.querySelectorAll('.nlinks a').forEach(a=>a.addEventListener('click',()=>document.getElementById('NL').classList.remove('open')));
+
+/* ─── Reveal ─── */
+const io=new IntersectionObserver(entries=>{
+  entries.forEach((e,i)=>{
+    if(e.isIntersecting){setTimeout(()=>e.target.classList.add('in'),i*85);io.unobserve(e.target);}
+  });
+},{threshold:.1,rootMargin:'0px 0px -40px 0px'});
+document.querySelectorAll('.dcard,.tip-card,.sr').forEach(el=>io.observe(el));
+
+/* ─── Filter ─── */
+function filterCards(cat,btn){
+  document.querySelectorAll('.ftab').forEach(t=>t.classList.remove('on'));
+  btn.classList.add('on');
+  document.querySelectorAll('.dcard').forEach(c=>{
+    c.classList.toggle('hidden',!(cat==='all'||c.dataset.cat===cat));
+  });
+}
+
+/* ─── Modal Data ─── */
+const DATA={
+  shaileshwari:{cat:'✦ Spiritual',name:'Shaileshwari Temple',
+    img:'https://raw.githubusercontent.com/hoteldanfe188-collab/hotel-danfe/main/doti.jpg',
+    desc:'Shaileshwari Temple is one of the most sacred shrines in all of Far-Western Nepal. Dedicated to Goddess Shaileshwari — a powerful manifestation of Bhagwati/Durga — it sits in the heart of Silgadhi, attracting thousands of pilgrims each year.',
+    facts:[{l:'Distance from Hotel',v:'5 min walk'},{l:'Best Time',v:'Year-round'},{l:'Category',v:'Spiritual / Cultural'},{l:'Entry',v:'Free'}]},
+  khaptad:{cat:'✦ Nature',name:'Khaptad National Park',
+    img:'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=900&q=80',
+    desc:'A pristine highland sanctuary at 3,000–3,700m elevation, spanning four districts. Celebrated for its meadows, rich biodiversity and the meditative legacy of the sage Khaptad Baba.',
+    facts:[{l:'Distance',v:'Helicopter ~30 min'},{l:'Best Time',v:'Sep–Nov, Mar–May'},{l:'Category',v:'Nature / Trekking'},{l:'Permit',v:'Required'}]},
+  seti:{cat:'✦ River',name:'Seti River Valley',
+    img:'https://images.unsplash.com/photo-1586348943529-beaae6c28db9?w=900&q=80',
+    desc:'The Seti River\'s milky white waters (from glacial limestone) wind gracefully through Doti\'s green valleys. Beautiful at sunrise and sunset when golden light illuminates the waters.',
+    facts:[{l:'Distance',v:'15–20 min from hotel'},{l:'Best Time',v:'Oct–May'},{l:'Category',v:'Nature / Photography'},{l:'Entry',v:'Free'}]},
+  doti:{cat:'✦ History',name:'Doti Kingdom Ruins',
+    img:'https://images.unsplash.com/photo-1587474260584-136574528ed5?w=900&q=80',
+    desc:'The ancient Doti Kingdom was one of Nepal\'s eight medieval principalities. Explore the Doti Killa (fort), ancient temples and inscriptions telling the story of a forgotten empire.',
+    facts:[{l:'Distance',v:'20–30 min'},{l:'Best Time',v:'Year-round'},{l:'Category',v:'History / Heritage'},{l:'Guide',v:'Recommended'}]},
+  gurukhola:{cat:'✦ Spiritual',name:'Gurukhola Dham',
+    img:'https://images.unsplash.com/photo-1518002054494-3a6f94352e9d?w=900&q=80',
+    desc:'A tranquil and deeply spiritual site beloved by pilgrims and nature seekers. Set amid natural beauty with the sound of flowing water and birdsong, offering rare peace and inner reflection.',
+    facts:[{l:'Distance',v:'30–40 min'},{l:'Best Time',v:'Year-round'},{l:'Category',v:'Spiritual / Nature'},{l:'Entry',v:'Free'}]},
+  silgadhi:{cat:'✦ Nature',name:'Silgadhi Hills',
+    img:'https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=900&q=80',
+    desc:'The hills surrounding Silgadhi offer spectacular panoramic views. On clear days, dramatic Himalayan peaks stretch to the horizon. Perfect for sunrise and sunset walks with 360° vistas.',
+    facts:[{l:'Distance',v:'10–20 min walk'},{l:'Best Time',v:'Oct–May'},{l:'Category',v:'Nature / Scenic'},{l:'Entry',v:'Free'}]},
+};
+
+function openModal(key){
+  const d=DATA[key];
+  document.getElementById('MIMG').src=d.img;
+  document.getElementById('MCAT').textContent=d.cat;
+  document.getElementById('MTIT').textContent=d.name;
+  document.getElementById('MDESC').textContent=d.desc;
+  document.getElementById('MFACTS').innerHTML=d.facts.map(f=>
+    `<div><div class="mfact-l">${f.l}</div><div class="mfact-v">${f.v}</div></div>`
+  ).join('');
+  document.getElementById('MDL').classList.add('show');
+  document.body.style.overflow='hidden';
+}
+function closeModal(){
+  document.getElementById('MDL').classList.remove('show');
+  document.body.style.overflow='';
+}
+function closeModalOut(e){if(e.target===document.getElementById('MDL'))closeModal()}
+document.addEventListener('keydown',e=>{if(e.key==='Escape')closeModal()});
+</script>
+</body>
+</html>
